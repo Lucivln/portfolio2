@@ -1,0 +1,218 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define CSS variables for both light and dark themes */
+:root {
+    --background-color: #792b2b; /* Dark mode background color */
+    --text-color: #000000; /* Dark mode text color */
+    --accent-color: #ff2f00; /* Dark mode accent color */
+}
+
+/* Styles for the light theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--accent-color);
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    background-color: var(--accent-color);
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Styles for the dark theme */
+body.dark-mode {
+    --background-color: #ffffff; /* Dark mode background color */
+    --text-color: #000000; /* Dark mode text color */
+    --accent-color: #ff5733; /* Dark mode accent color */
+}
+
+/* Apply dark mode styles */
+body.dark-mode .header {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* Add a hover effect to project cards */
+.project, .animated.fade-in > * {
+    background-color: #ffcd42; /* Vibrant yellow */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.project:hover, .animated.fade-in > *:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #f7c72e; /* Slightly different color on hover */
+}
+
+/* Add fade-in animation to about section */
+.about-section {
+    background-color: #ffffff; /* Vibrant yellow */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Add fade-in animation to the about section */
+.about-section.animated.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Additional CSS for the about me section */
+.column {
+    flex: 1;
+}
+
+.profile-picture {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-bio {
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Adjust the width of the project section to fit the content */
+.project {
+    max-width: 800px;
+    margin: auto;
+}
+
+.profession-image img {
+    max-width: 1500px; /* Adjust the maximum width of the profession image */
+    height: auto; /* Adjust the height of the profession image */
+    border-radius: 10px; /* Optional: Add border radius if needed */
+    /* Add any other styling properties you want to modify */
+}
+
+/* Styles for the contact section */
+#contact {
+    background-color: #ffffff; /* Light gray background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #a27f7f; /* Slightly different color on hover */
+}
+
+.contact-info {
+    color: #000000;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #ff5733; /* Accent color */
+}
+
+.contact-info a:hover {
+    text-decoration:#0015ff;
+}
+
+/* Styles for the education section */
+#education {
+    background-color: #ffffff; /* Light gray background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#education:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #f0f0f0; /* Slightly different color on hover */
+}
+
+/* Styles for the marks section */
+#marks-obtained {
+    background-color: #ffffff; /* Light gray background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#marks-obtained:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #f0f0f0; /* Slightly different color on hover */
+}
+
+/* Styles for the hackerrank section */
+#hackerrank {
+    background-color: #ffffff; /* Light gray background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#hackerrank:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #f0f0f0; /* Slightly different color on hover */
+}
+
+/* Styles for the certifications section */
+#certifications {
+    background-color: #ffffff; /* Light gray background color */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+#certifications:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #f0f0f0; /* Slightly different color on hover */
+}
+
+/* Adjust the width of the sections to fit the content */
+#education, #marks-obtained, #hackerrank, #certifications {
+    max-width: 800px;
+    margin: 20px auto;
+}
