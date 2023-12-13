@@ -212,7 +212,22 @@ body.dark-mode .header {
 }
 
 /* Adjust the width of the sections to fit the content */
-#education, #marks-obtained, #hackerrank, #certifications {
+#education, #marks-obtained, #hackerrank, #certifications, #portfolio {
     max-width: 800px;
     margin: 20px auto;
+}
+
+#portfolio:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: #f0f0f0; /* Slightly different color on hover */
+}
+
+#portfolio {
+    background-color: #ffffff; /* Light gray background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 30px auto ;
+    padding: 20px ;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
